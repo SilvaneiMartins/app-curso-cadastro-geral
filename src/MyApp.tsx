@@ -1,16 +1,24 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StatusBar } from 'react-native';
+import { ThemeProvider } from 'styled-components';
+
+import theme from './styles/theme';
+import { Routes } from './routes';
 
 export const MyApp = () => {
+
+
     return (
-        <View
-            style={{
-                flex: 1,
-                alignItems: 'center',
-                justifyContent: 'center',
-            }}
-        >
-            <Text style={{ fontSize: 25 }} >Cadastro Geral</Text>
-        </View>
+        <ThemeProvider theme={theme} >
+            <StatusBar
+                translucent
+                barStyle="dark-content"
+                backgroundColor={'transparent'}
+            />
+
+            <View style={{ flex: 1 }}>
+                <Routes />
+            </View>
+        </ThemeProvider>
     )
 }

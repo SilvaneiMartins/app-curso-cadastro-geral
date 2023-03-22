@@ -38,7 +38,7 @@ export const TabRoutes = () => {
                     borderTopLeftRadius: 20,
                     borderTopRightRadius: 20,
                     shadowColor: theme.colors.GRAY_500,
-                    backgroundColor: theme.colors.GRAY_100,
+                    backgroundColor: theme.colors.GRAY_300,
                 },
                 tabBarLabelStyle: {
                     fontSize: 11,

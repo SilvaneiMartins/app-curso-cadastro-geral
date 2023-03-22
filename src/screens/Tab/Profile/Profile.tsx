@@ -5,7 +5,7 @@ import { Container, Title } from './styles';
 export const Profile = () => {
     return (
         <Container>
-            <Title>Profile</Title>
+            <Title>Ajustes</Title>
         </Container>
     )
 }

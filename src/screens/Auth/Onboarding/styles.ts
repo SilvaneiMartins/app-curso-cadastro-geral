@@ -7,3 +7,15 @@ export const Container = styled.View`
 export const Title = styled.Text`
     font-size: 24px;
 `;
+
+export const ContentImage = styled.View``;
+
+export const ViewImageLogo = styled.View`
+    position: absolute;
+    top: 120px;
+    left: 30px;
+`;
+
+export const ImageBanner = styled.Image``;
+
+export const ImageLogo = styled.Image``;

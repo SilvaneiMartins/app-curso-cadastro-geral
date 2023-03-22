@@ -1,12 +1,15 @@
 import React from 'react';
-import { Text } from 'react-native';
 
 import { Container, Title } from './styles';
 
-export const Header = () => {
+interface HeaderProps {
+    title: string;
+};
+
+export const Header = (props: HeaderProps) => {
     return (
         <Container>
-            <Title>Header</Title>
+            <Title>{props.title}</Title>
         </Container>
     )
 }

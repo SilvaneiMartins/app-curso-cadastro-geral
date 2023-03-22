@@ -6,7 +6,7 @@ import { Container, Title } from './styles';
 export const Search = () => {
     return (
         <>
-            <Header />
+            <Header title='Pesquisar' />
             <Container>
                 <Title>Search</Title>
             </Container>

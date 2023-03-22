@@ -6,7 +6,7 @@ import { Container, Title } from './styles';
 export const Home = () => {
     return (
         <>
-            <Header />
+            <Header title='Home' />
             <Container>
                 <Title>Home</Title>
             </Container>

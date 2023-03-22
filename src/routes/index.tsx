@@ -5,7 +5,7 @@ import { AppRoutes } from './app.routes';
 import { AuthRoutes } from './auth.routes';
 
 export const Routes = () => {
-    const user = "Silvanei Martins";
+    const user = null;
 
     return (
         <NavigationContainer>

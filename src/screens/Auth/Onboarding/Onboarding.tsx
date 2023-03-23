@@ -1,8 +1,12 @@
 import React from 'react';
 import { } from 'phosphor-react-native';
-import { StatusBar } from 'react-native';
+import { StatusBar, Image } from 'react-native';
 import { useTheme } from 'styled-components';
 import { useNavigation } from '@react-navigation/native';
+
+import LogoWhite from '../../../assets/onboarding/logo_white.png';
+import BannerTopOne from '../../../assets/onboarding/banner_top_onb_1.png';
+import BannerCentralPng from '../../../assets/onboarding/banner_central_onb_1.png';
 
 import {
     Title,
@@ -14,9 +18,14 @@ import {
     TitleApplication,
     Line,
     SubTitle,
+    ContentBody,
+    ImageCentral,
+    ContentFooter,
+    TitleFooter,
+    SubTitleFooter,
+    ContentDot,
+    Dot,
 } from './styles';
-import LogoWhite from '../../../assets/onboarding/logo_white.png';
-import BannerTopOne from '../../../assets/onboarding/banner_top_onb_1.png';
 
 export const Onboarding = () => {
     const theme = useTheme();
@@ -47,6 +56,27 @@ export const Onboarding = () => {
                         <SubTitle>Seu app parar cadastro geral</SubTitle>
                     </ViewImageLogo>
                 </ContentImage>
+
+                <ContentBody>
+                    <ImageCentral
+                        resizeMode='contain'
+                        source={BannerCentralPng}
+                    />
+                </ContentBody>
+
+                <ContentFooter>
+                    <TitleFooter>Cadastro Online!</TitleFooter>
+                    <SubTitleFooter>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing,
+                        sed do eiusmod tempor ut labore
+                    </SubTitleFooter>
+                </ContentFooter>
+
+                <ContentDot>
+                    <Dot />
+                    <Dot />
+                    <Dot />
+                </ContentDot>
             </Container>
         </>
     )

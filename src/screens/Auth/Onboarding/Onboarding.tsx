@@ -11,6 +11,9 @@ import {
     ImageBanner,
     ContentImage,
     ViewImageLogo,
+    TitleApplication,
+    Line,
+    SubTitle,
 } from './styles';
 import LogoWhite from '../../../assets/onboarding/logo_white.png';
 import BannerTopOne from '../../../assets/onboarding/banner_top_onb_1.png';
@@ -38,6 +41,10 @@ export const Onboarding = () => {
                             source={LogoWhite}
                             resizeMode='contain'
                         />
+
+                        <TitleApplication>Cadastro Geral</TitleApplication>
+                        <Line />
+                        <SubTitle>Seu app parar cadastro geral</SubTitle>
                     </ViewImageLogo>
                 </ContentImage>
             </Container>

@@ -16,6 +16,11 @@ import {
     SubTitle,
     ContentBody,
     ImageCentral,
+    ContentFooter,
+    TitleFooter,
+    SubTitleFooter,
+    ContentDot,
+    Dot,
 } from './styles';
 
 export const OnboardingTwo = () => {
@@ -51,6 +56,20 @@ export const OnboardingTwo = () => {
                         resizeMode='contain'
                     />
                 </ContentBody>
+
+                <ContentFooter>
+                    <TitleFooter>Cadastro Online!</TitleFooter>
+                    <SubTitleFooter>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing,
+                        sed do eiusmod tempor ut labore
+                    </SubTitleFooter>
+                </ContentFooter>
+
+                <ContentDot>
+                    <Dot />
+                    <Dot />
+                    <Dot />
+                </ContentDot>
             </Container>
         </>
     )

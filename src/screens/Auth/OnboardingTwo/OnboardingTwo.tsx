@@ -9,6 +9,11 @@ import {
     Title,
     ContentImage,
     ImageBanner,
+    ViewImageLogo,
+    ImageLogo,
+    TitleApplication,
+    Line,
+    SubTitle,
 } from './styles';
 
 export const OnboardingTwo = () => {
@@ -25,6 +30,17 @@ export const OnboardingTwo = () => {
                         source={BannerTopPng}
                         resizeMode='contain'
                     />
+
+                    <ViewImageLogo>
+                        <ImageLogo
+                            source={LogoBluePng}
+                            resizeMode='contain'
+                        />
+
+                        <TitleApplication>Cadastro Geral</TitleApplication>
+                        <Line />
+                        <SubTitle>Seu app parar cadastro geral</SubTitle>
+                    </ViewImageLogo>
                 </ContentImage>
 
                 <Title>OnboardingTwo</Title>

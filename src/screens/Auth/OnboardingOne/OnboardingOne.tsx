@@ -27,7 +27,7 @@ import {
     Dot,
 } from './styles';
 
-export const Onboarding = () => {
+export const OnboardingOne = () => {
     const theme = useTheme();
     const navigation = useNavigation();
 

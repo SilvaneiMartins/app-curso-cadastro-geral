@@ -14,6 +14,8 @@ import {
     TitleApplication,
     Line,
     SubTitle,
+    ContentBody,
+    ImageCentral,
 } from './styles';
 
 export const OnboardingTwo = () => {
@@ -43,7 +45,12 @@ export const OnboardingTwo = () => {
                     </ViewImageLogo>
                 </ContentImage>
 
-                <Title>OnboardingTwo</Title>
+                <ContentBody>
+                    <ImageCentral
+                        source={BannerCentralPng}
+                        resizeMode='contain'
+                    />
+                </ContentBody>
             </Container>
         </>
     )

@@ -43,3 +43,14 @@ export const SubTitle = styled.Text`
     font-weight: bold;
     color: ${({theme }) => theme.colors.BLUE};
 `;
+
+export const ContentBody = styled.View`
+    margin-top: -30px;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const ImageCentral = styled.Image`
+    width: 228px;
+    height: 320px;
+`;

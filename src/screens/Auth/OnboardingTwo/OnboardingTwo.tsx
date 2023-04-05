@@ -1,4 +1,5 @@
 import { StatusBar } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import LogoBluePng from '../../../assets/onboarding/logo_azul.png';
 import BannerTopPng from '../../../assets/onboarding/banner_top_onb_2.png';
@@ -20,10 +21,21 @@ import {
     TitleFooter,
     SubTitleFooter,
     ContentDot,
-    Dot,
+    ContentDotButton,
+    ContentDotButtonText,
 } from './styles';
 
 export const OnboardingTwo = () => {
+    const navigation = useNavigation();
+
+    const handleNavigateToOnboardingThree = () => {
+        navigation.navigate('OnboardingThree');
+    };
+
+    const handleNavigateToOnboardingOne = () => {
+        navigation.navigate('OnboardingOne');
+    };
+
     return (
         <>
             <StatusBar
@@ -66,9 +78,23 @@ export const OnboardingTwo = () => {
                 </ContentFooter>
 
                 <ContentDot>
-                    <Dot />
-                    <Dot />
-                    <Dot />
+                    <ContentDotButton
+                        onPress={handleNavigateToOnboardingOne}
+                        style={{
+                            marginLeft: 30,
+                        }}
+                    >
+                        <ContentDotButtonText>Voltar</ContentDotButtonText>
+                    </ContentDotButton>
+
+                    <ContentDotButton
+                        onPress={handleNavigateToOnboardingThree}
+                        style={{
+                            marginRight: 30,
+                        }}
+                    >
+                        <ContentDotButtonText>Continuar</ContentDotButtonText>
+                    </ContentDotButton>
                 </ContentDot>
             </Container>
         </>

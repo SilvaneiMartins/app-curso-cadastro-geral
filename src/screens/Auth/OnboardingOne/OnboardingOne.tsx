@@ -32,6 +32,10 @@ export const OnboardingOne = () => {
     const theme = useTheme();
     const navigation = useNavigation();
 
+    const handleNavigateToOnboardingTwo = () => {
+        navigation.navigate('OnboardingTwo');
+    };
+
     return (
         <>
             <StatusBar
@@ -75,9 +79,7 @@ export const OnboardingOne = () => {
 
                 <ContentDot>
                     <ContentDotButton
-                        onPress={
-                            () => console.log('Continuar')
-                        }
+                        onPress={handleNavigateToOnboardingTwo}
                     >
                         <ContentDotButtonText>Continuar</ContentDotButtonText>
                     </ContentDotButton>

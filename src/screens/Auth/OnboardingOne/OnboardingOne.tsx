@@ -24,7 +24,8 @@ import {
     TitleFooter,
     SubTitleFooter,
     ContentDot,
-    Dot,
+    ContentDotButton,
+    ContentDotButtonText,
 } from './styles';
 
 export const OnboardingOne = () => {
@@ -73,9 +74,13 @@ export const OnboardingOne = () => {
                 </ContentFooter>
 
                 <ContentDot>
-                    <Dot />
-                    <Dot />
-                    <Dot />
+                    <ContentDotButton
+                        onPress={
+                            () => console.log('Continuar')
+                        }
+                    >
+                        <ContentDotButtonText>Continuar</ContentDotButtonText>
+                    </ContentDotButton>
                 </ContentDot>
             </Container>
         </>

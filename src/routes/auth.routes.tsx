@@ -13,7 +13,7 @@ const { Navigator, Screen } = createNativeStackNavigator();
 export const AuthRoutes = () => {
     return (
         <Navigator
-            initialRouteName='SignIn'
+            initialRouteName='OnboardingOne'
             screenOptions={{
                 headerShown: false,
             }}

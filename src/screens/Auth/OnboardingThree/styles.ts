@@ -73,17 +73,24 @@ export const SubTitleFooter = styled.Text`
 
 export const ContentDot = styled.View`
     width: 100%;
-    margin-top: 25px;
+    margin-top: 10px;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+`;
+
+export const ContentDotButton = styled.Pressable`
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 75px;
+    background: #246BFD;
     align-items: center;
     justify-content: center;
 `;
 
-export const Dot = styled.View`
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    border-radius: 10px;
-
-    background: ${({ theme }) => theme.colors.BLUE};
+export const ContentDotButtonText = styled.Text`
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 800;
 `;

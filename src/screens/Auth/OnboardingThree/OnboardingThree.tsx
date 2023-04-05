@@ -24,12 +24,21 @@ import {
     TitleFooter,
     SubTitleFooter,
     ContentDot,
-    Dot,
+    ContentDotButton,
+    ContentDotButtonText,
 } from './styles';
 
 export const OnboardingThree = () => {
     const theme = useTheme();
     const navigation = useNavigation();
+
+    const handleNavigateToSignIn = () => {
+        navigation.navigate('SignIn');
+    };
+
+    const handleNavigateToOnboardingTwo = () => {
+        navigation.goBack();
+    };
 
     return (
         <>
@@ -73,9 +82,23 @@ export const OnboardingThree = () => {
                 </ContentFooter>
 
                 <ContentDot>
-                    <Dot />
-                    <Dot />
-                    <Dot />
+                    <ContentDotButton
+                        onPress={handleNavigateToOnboardingTwo}
+                        style={{
+                            marginLeft: 30,
+                        }}
+                    >
+                        <ContentDotButtonText>Voltar</ContentDotButtonText>
+                    </ContentDotButton>
+
+                    <ContentDotButton
+                        onPress={handleNavigateToSignIn}
+                        style={{
+                            marginRight: 30,
+                        }}
+                    >
+                        <ContentDotButtonText>Continuar</ContentDotButtonText>
+                    </ContentDotButton>
                 </ContentDot>
             </Container>
         </>
